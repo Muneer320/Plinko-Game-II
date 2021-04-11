@@ -80,12 +80,12 @@ function draw() {
     ball.display();
 
     if (ball.body.position.y > 760) {
-      if (ball.body.position.x < 300) {
+      if (ball.body.position.x < 350) {
         score += 500;
         ball = null;
         if (count >= 5) gameState = "end";
       }
-      else if (ball.body.position.x < 600 && ball.body.position.x > 301) {
+      else if (ball.body.position.x < 600 && ball.body.position.x > 351) {
         score += 100;
         ball = null;
         if (count >= 5) gameState = "end";
